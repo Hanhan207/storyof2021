@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import DateCom from './components/date'
 import  Texty from 'rc-texty';
 import ScrollAnim from 'rc-scroll-anim';
 const ScrollOverPack = ScrollAnim.OverPack;
@@ -13,6 +14,7 @@ function App() {
       </ScrollOverPack>
       <ScrollOverPack className='container'  style={{height:windowheight*0.6}}>
       <Texty className='titleP0'>How many time have we met this year?</Texty>
+      <DateCom/>
       </ScrollOverPack>
       <ScrollOverPack className='container'  style={{height:windowheight*0.6}}>
       <Texty className='titleP0'>How many time have we met this year?</Texty>

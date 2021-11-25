@@ -54,3 +54,9 @@
   align-items: center;
   justify-content: center;
 }
+
+.dateP1{
+  font-size:larger;
+  font-family: 'Song';
+  font-weight:normal;
+}
