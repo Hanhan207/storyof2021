@@ -13,6 +13,11 @@
   }
 }
 
+@font-face {
+  font-family: 'Song';
+  src: url('assets/SourceHanSerifCN-VF.ttf');
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -35,4 +40,17 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.titleP0{
+  font-size:larger;
+  font-family: 'Song';
+  font-weight: bold;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
