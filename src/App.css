@@ -60,3 +60,8 @@
   font-family: 'Song';
   font-weight:normal;
 }
+
+#lineCon{
+  height: 200px;
+  width: 200px;
+}
