@@ -52,19 +52,32 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content:start;
-  background-image: url('./assets/dust_scratches.png');
+  justify-content:center;
+  padding: 10%;
+  /* background-image: url('./assets/dust_scratches.png'); */
+  /* border-style:solid; */
+  border-bottom:solid  ;
+  border-bottom-width: 3px;
 }
 
 .dateP1{
-  font-size:larger;
+  font-size:16px;
   font-family: 'Song';
-  font-weight:normal;
+  font-weight:bold;
+  height: 10%;
+  width: 260px;
+  display :flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  
+  /* background-color: red; */
 }
 
 #lineCon{
-  height: 400px;
-  width: 70%;
+  height: 250px;
+  width: 300px;
+  margin:16px;
 }
 
 .code-box-shape{
