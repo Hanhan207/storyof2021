@@ -2,6 +2,7 @@ import '../App.css';
 // import  Texty from 'rc-texty';
 import {Column} from '@antv/g2plot';
 import { useEffect } from 'react';
+import { Parallax } from "rc-scroll-anim";
 // import ScrollAnim from 'rc-scroll-anim';
 
 const data =[
@@ -62,7 +63,11 @@ function Foodcolumn(){
           columnPlot.render();
     })
     return(
-        <div id="lineCon"></div>
+       
+           <Parallax className='up' animation={{ y: 0, opacity: 1, playScale: [0.5, 0.8] }}>
+        <div id="lineCon"/>
+      </Parallax>
+        
     )
 }
 

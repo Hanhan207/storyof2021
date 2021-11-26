@@ -31,6 +31,7 @@ function Mycontent() {
 }
 
 function App() {
+  const test = '<h4>How many times?</h4>'
   const windowheight = document.documentElement.clientHeight;
   const [mode, setMode] = useState(null);
   const [linedata, setlinedata] = useState("30% 70%");
@@ -61,6 +62,8 @@ function App() {
     // setlinedata('50% 50%')
     setpath(mypath[0]);
   }
+
+
   return (
     <div className="App" style={{}}>
       {/* P0 */}
@@ -96,7 +99,11 @@ function App() {
         style={{ height: windowheight }}
       >
         <DateCom data={data.date[0]} />
-
+        <Foodcolumn />
+        
+        {/* <div dangerouslySetInnerHTML={{ __html:  data.date[0].des}} /> */}
+        <div dangerouslySetInnerHTML={{ __html: '<div>123</div>' }} />
+        
       </ScrollOverPack>
       {/* P2 */}
       <ScrollOverPack

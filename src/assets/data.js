@@ -4,7 +4,9 @@ const date = [
         day:'07',
         count:'三',
         weather:'sunny',
-        content:'今天特意都穿了白衣服'
+        content:'今天特意都穿了白衣服',
+        des:'今年一起吃了<div className="numStyle">100+</div>顿饭，我们最常吃的是螺蛳粉，其次是烤串，也许这就是“臭味相投”。',
+        
     },
     {
         month:'02',

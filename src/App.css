@@ -64,7 +64,7 @@
   font-size:16px;
   font-family: 'Song';
   font-weight:bold;
-  height: 10%;
+  /* height: 10%; */
   width: 260px;
   display :flex;
   flex-direction: column;
@@ -84,4 +84,13 @@
   width: 30px;
   height: 30px;
   background-color: azure;
+}
+
+.up{
+  transform: translateY(-20px);
+  opacity: 0;
+}
+.numStyle{
+  font-size: larger;
+  color: red;
 }
