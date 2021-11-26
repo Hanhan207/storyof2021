@@ -3,14 +3,16 @@ import "./App.css";
 import { useEffect,useState } from "react";
 //自设组件
 import DateCom from "./components/date";
-import FoodColumn from "./components/column";
+import Foodcolumn from "./components/column";
 //动画库
 import Texty from "rc-texty";
 import ScrollAnim from "rc-scroll-anim";
 import TweenOne from "rc-tween-one";
 import QueueAnim from "rc-queue-anim";
 import SvgDrawPlugin from 'rc-tween-one/lib/plugin/SvgDrawPlugin';
+// import backimg from './assets/example.png'
 TweenOne.plugins.push(SvgDrawPlugin);
+//资源
 
 // import { Line,Column} from '@antv/g2plot';
 const ScrollOverPack = ScrollAnim.OverPack;
@@ -32,7 +34,7 @@ function App() {
 const [mode,setMode] = useState(null)
 const [linedata,setlinedata] = useState('30% 70%')
 const mypath = ['M541.5,36.45313c-5,6 -8,100 -95,128c-87,28 -66,32 -173,37c-107,5 -143,106 -139,146','M10,10c65,50,115,50,180,0']
-const [path, setpath] = useState(mypath[0])
+const [path, setpath] = useState(mypath[1])
 
   useEffect(() => {
   });
@@ -53,7 +55,7 @@ function setline(){
   setpath(mypath[0])
 }
   return (
-    <div className="App">
+    <div className="App" style={{}}>
       {/* P1 */}
       <ScrollOverPack
         className="container"
@@ -64,7 +66,7 @@ function setline(){
       {/* P2 */}
       <ScrollOverPack
         className="container"
-        style={{ height: windowheight, background: colors[2] }}
+        style={{ height: windowheight,  }}
         
         // onChange={(e)=>setMode(e.mode)}
         // onChange={(e)=>gundaole(e.mode)}
@@ -103,7 +105,7 @@ function setline(){
       >
         {/* <FoodColumn/> */}
         <Texty className="titleP0">第四页</Texty>
-        
+        <Foodcolumn/>
       </ScrollOverPack>
     </div>
   );
