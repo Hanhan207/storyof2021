@@ -64,7 +64,7 @@ function Foodcolumn(){
     })
     return(
        
-           <Parallax className='up' animation={{ y: 0, opacity: 1, playScale: [0.5, 0.8] }}>
+           <Parallax className='up' animation={{ y: 0, opacity: 1, playScale: [0.6, 0.8] }}>
         <div id="lineCon"/>
       </Parallax>
         

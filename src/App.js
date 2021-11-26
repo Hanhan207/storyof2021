@@ -102,7 +102,7 @@ function App() {
         <Foodcolumn />
         
         {/* <div dangerouslySetInnerHTML={{ __html:  data.date[0].des}} /> */}
-        <div dangerouslySetInnerHTML={{ __html: '<div>123</div>' }} />
+        {/* <div dangerouslySetInnerHTML={{ __html: '<div>123</div>' }} /> */}
         
       </ScrollOverPack>
       {/* P2 */}

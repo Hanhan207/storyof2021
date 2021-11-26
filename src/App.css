@@ -87,7 +87,7 @@
 }
 
 .up{
-  transform: translateY(-20px);
+  transform: translateY(40px);
   opacity: 0;
 }
 .numStyle{
