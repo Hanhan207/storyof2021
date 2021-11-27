@@ -1,68 +1,69 @@
 import logo from "./logo.svg";
 import "./App.css";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 //自设组件
 import DateCom from "./components/date";
 import Foodcolumn from "./components/column";
+import Mypath from "./components/line";
+import Park from "./components/park";
 //动画库
 import Texty from "rc-texty";
 import ScrollAnim from "rc-scroll-anim";
 import TweenOne from "rc-tween-one";
 import QueueAnim from "rc-queue-anim";
-import SvgDrawPlugin from "rc-tween-one/lib/plugin/SvgDrawPlugin";
+
 import { Parallax } from "rc-scroll-anim";
 // import backimg from './assets/example.png'
 import data from "./assets/data";
 import { center } from "@antv/g2plot/lib/plots/sankey/sankey";
-TweenOne.plugins.push(SvgDrawPlugin);
-//资源
 
-// import { Line,Column} from '@antv/g2plot';
 const ScrollOverPack = ScrollAnim.OverPack;
-const scrollScreen = ScrollAnim.scrollScreen;
 
 const colors = ["#F14456", "#2149DF", "#1BBC6B"];
 
-function Mycontent() {
-  return (
-    // <Texty>How many times?</Texty>
-    <h4>How many times?</h4>
-  );
-}
-
 function App() {
-  const test = '<h4>How many times?</h4>'
-  const windowheight = document.documentElement.clientHeight;
-  const [mode, setMode] = useState(null);
-  const [linedata, setlinedata] = useState("30% 70%");
   const mypath = [
-    "M541.5,36.45313c-5,6 -8,100 -95,128c-87,28 -66,32 -173,37c-107,5 -143,106 -139,146",
+    "M254 6C226.667 0 164.2.7 133 51.5 94 115 140.5 185 121.5 236s-86 18.5-78.5 155c0 55.2-28 67.333-42 66.5",
     "M10,10c65,50,115,50,180,0",
   ];
-  const [path, setpath] = useState(mypath[1]);
+  const windowheight = document.documentElement.clientHeight;
+
   //入场动画参数
   const entryType = "bottom";
   const entryInterval = 500;
   const entryDuration = 800;
+  // var path = document.querySelector("#road");
+  const myroad = useRef();
+  var path = myroad.current;
+  console.log(path);
+  // var pathLength = path.getTotalLength();
+  // path.style.strokeDasharray = pathLength + " " + pathLength;
+  // path.style.strokeDashoffset = pathLength;
+  // path.getBoundingClientRect();
 
-  useEffect(() => {});
+  // window.addEventListener("scroll", function (e) {
+  //   // What % down is it?
+  //   // https://stackoverflow.com/questions/2387136/cross-browser-method-to-determine-vertical-scroll-percentage-in-javascript/2387222#2387222
+  //   // Had to try three or four differnet methods here. Kind of a cross-browser nightmare.
+  //   var scrollPercentage =
+  //     (document.documentElement.scrollTop + document.body.scrollTop) /
+  //     (document.documentElement.scrollHeight -
+  //       document.documentElement.clientHeight);
 
-  function gundaole(e) {
-    // console.log(e)
-    if (e === "enter") {
-      setMode("enter");
-      setlinedata("100%");
-    } else {
-      setlinedata(0);
-    }
-    console.log(linedata);
-  }
+  //   // Length to offset the dashes
+  //   var drawLength = pathLength * scrollPercentage;
 
-  function setline() {
-    // setlinedata('50% 50%')
-    setpath(mypath[0]);
-  }
+  //   // Draw in reverse
+  //   path.style.strokeDashoffset = pathLength - drawLength;
 
+  //   // When complete, remove the dash array, otherwise shape isn't quite sharp
+  //   // Accounts for fuzzy math
+  //   if (scrollPercentage >= 0.99) {
+  //     path.style.strokeDasharray = "none";
+  //   } else {
+  //     path.style.strokeDasharray = pathLength + " " + pathLength;
+  //   }
+  // });
 
   return (
     <div className="App" style={{}}>
@@ -100,10 +101,9 @@ function App() {
       >
         <DateCom data={data.date[0]} />
         <Foodcolumn />
-        
+
         {/* <div dangerouslySetInnerHTML={{ __html:  data.date[0].des}} /> */}
         {/* <div dangerouslySetInnerHTML={{ __html: '<div>123</div>' }} /> */}
-        
       </ScrollOverPack>
       {/* P2 */}
       <ScrollOverPack
@@ -112,20 +112,7 @@ function App() {
         style={{ height: windowheight }}
       >
         <DateCom data={data.date[1]} />
-
-        <svg
-          width="200"
-          height="84"
-          version="1.2"
-          style={{ display: "block", margin: "auto" }}
-        >
-          <TweenOne
-            animation={{ SVGDraw: linedata, duration: 500 }}
-            style={{ fill: "none", strokeWidth: 10, stroke: "#FFF" }}
-            component="path"
-            d={path}
-          />
-        </svg>
+        <Park />
       </ScrollOverPack>
       {/* P3 */}
       <ScrollOverPack
@@ -134,6 +121,27 @@ function App() {
         style={{ height: windowheight }}
       >
         <DateCom data={data.date[2]} />
+        {/* <Mypath /> */}
+        <Parallax
+          className="up"
+          animation={{ y: 0, opacity: 1, playScale: [0.6, 0.8] }}
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="255"
+            height="461"
+            fill="none"
+            viewBox="0 0 255 461"
+          >
+            <path
+              ref={myroad}
+              id="road"
+              stroke="#000"
+              strokeWidth="6"
+              d="M254 6C226.667 0 164.2.7 133 51.5 94 115 140.5 185 121.5 236s-86 18.5-78.5 155c0 55.2-28 67.333-42 66.5"
+            />
+          </svg>
+        </Parallax>
       </ScrollOverPack>
       {/* P4 */}
       <ScrollOverPack
