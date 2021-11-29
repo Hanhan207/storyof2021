@@ -9,8 +9,8 @@ import Park from "./components/park";
 import Fall from "./components/fall";
 import Mytext from "./components/mytext";
 import Mad from "./components/mad";
-import Tickets from './components/tickets'
-import Album  from "./components/album";
+import Tickets from "./components/tickets";
+import Album from "./components/album";
 //动画库
 import Texty from "rc-texty";
 import ScrollAnim from "rc-scroll-anim";
@@ -32,6 +32,7 @@ function App() {
     "M10,10c65,50,115,50,180,0",
   ];
   const windowheight = document.documentElement.clientHeight * 0.8;
+  const widowwidth = document.documentElement.clientWidth;
 
   //入场动画参数
   const entryType = "bottom";
@@ -71,7 +72,18 @@ function App() {
   // });
 
   return (
-    <div className="App" style={{}}>
+    <div
+      className="App"
+      style={
+        {
+          // display: "flex",
+          // flexDirection: "column",
+          // justifyContent: "center",
+          // alignItems: "center",
+          // width: widowwidth,
+        }
+      }
+    >
       {/* P0 */}
       <ScrollOverPack
         replay
@@ -90,10 +102,12 @@ function App() {
           leaveReverse
         >
           <div key="1">
-            <Texty className='dateP2'>今天是我们第几次见面？</Texty>
+            <Texty className="dateP2">今天是我们第几次见面？</Texty>
           </div>
           <div key="2">
-            <Texty className='dateP1'>How many times have we met this year?</Texty>
+            <Texty className="dateP1">
+              How many times have we met this year?
+            </Texty>
           </div>
         </QueueAnim>
       </ScrollOverPack>
@@ -107,7 +121,7 @@ function App() {
         <Foodcolumn />
 
         {/* <div dangerouslySetInnerHTML={{ __html:  data.date[0].des}} /> */}
-       <Mytext content={data.date[0].des}/>
+        <Mytext content={data.date[0].des} />
       </ScrollOverPack>
       {/* P2 */}
       <ScrollOverPack
@@ -117,7 +131,7 @@ function App() {
       >
         <DateCom data={data.date[1]} />
         <Park />
-        <Mytext content={data.date[1].des}/>
+        <Mytext content={data.date[1].des} />
       </ScrollOverPack>
       {/* P3 */}
       <ScrollOverPack
@@ -147,7 +161,7 @@ function App() {
             />
           </svg>
         </Parallax>
-        <Mytext content={data.date[2].des}/>
+        <Mytext content={data.date[2].des} />
       </ScrollOverPack>
       {/* P4 */}
       <ScrollOverPack
@@ -156,8 +170,8 @@ function App() {
         style={{ height: windowheight }}
       >
         <DateCom data={data.date[3]} />
-        <Mad/>
-        <Mytext content={data.date[3].des}/>
+        <Mad />
+        <Mytext content={data.date[3].des} />
       </ScrollOverPack>
       {/* P5 */}
       <ScrollOverPack
@@ -166,8 +180,8 @@ function App() {
         style={{ height: windowheight }}
       >
         <DateCom data={data.date[4]} />
-        <Fall/>
-        <Mytext content={data.date[4].des}/>
+        <Fall />
+        <Mytext content={data.date[4].des} />
       </ScrollOverPack>
       {/* P6 */}
       <ScrollOverPack
@@ -176,34 +190,29 @@ function App() {
         style={{ height: windowheight }}
       >
         <DateCom data={data.date[5]} />
-        <Tickets/>
-        <Mytext content={data.date[5].des}/>
+        <Tickets />
+        <Mytext content={data.date[5].des} />
       </ScrollOverPack>
       {/* P7 */}
-      <ScrollOverPack
-        replay
-        // className="container"
-        style={{ height: windowheight }}
-      >
- <Album/>
-      </ScrollOverPack>
+
+      <Album wheight={windowheight} wwidth={widowwidth} />
+
       <ScrollOverPack
         replay
         className="container"
         style={{ height: windowheight }}
       >
-       
-       <QueueAnim
+        <QueueAnim
           type={entryType}
           interval={entryInterval}
           duration={entryDuration}
           leaveReverse
         >
           <div key="1">
-            <Texty className='dateP2'>今天是我们第100次见面</Texty>
+            <Texty className="dateP2">今天是我们第100次见面</Texty>
           </div>
           <div key="2">
-            <Texty className='dateP1'>也是2022年第一次见面，新年快乐!</Texty>
+            <Texty className="dateP1">也是2022年第一次见面，新年快乐!</Texty>
           </div>
         </QueueAnim>
       </ScrollOverPack>

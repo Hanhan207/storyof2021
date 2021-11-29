@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-image: url('./assets/dust_scratches.png');
 }
 
 .App-logo {
@@ -55,7 +56,7 @@
   align-items: center;
   justify-content: center;
   padding: 10%;
-  background-image: url('./assets/dust_scratches.png');
+ 
   overflow: hidden;
   /* border-style:solid; */
   /* border-bottom: solid; */
