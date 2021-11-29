@@ -10,6 +10,7 @@ import Fall from "./components/fall";
 import Mytext from "./components/mytext";
 import Mad from "./components/mad";
 import Tickets from './components/tickets'
+import Album  from "./components/album";
 //动画库
 import Texty from "rc-texty";
 import ScrollAnim from "rc-scroll-anim";
@@ -30,7 +31,7 @@ function App() {
     "M254 6C226.667 0 164.2.7 133 51.5 94 115 140.5 185 121.5 236s-86 18.5-78.5 155c0 55.2-28 67.333-42 66.5",
     "M10,10c65,50,115,50,180,0",
   ];
-  const windowheight = document.documentElement.clientHeight;
+  const windowheight = document.documentElement.clientHeight * 0.8;
 
   //入场动画参数
   const entryType = "bottom";
@@ -89,11 +90,10 @@ function App() {
           leaveReverse
         >
           <div key="1">
-            {" "}
-            <Texty>今天是我们第几次见面？</Texty>
+            <Texty className='dateP2'>今天是我们第几次见面？</Texty>
           </div>
           <div key="2">
-            <Texty>How many times have we met this year?</Texty>
+            <Texty className='dateP1'>How many times have we met this year?</Texty>
           </div>
         </QueueAnim>
       </ScrollOverPack>
@@ -182,10 +182,30 @@ function App() {
       {/* P7 */}
       <ScrollOverPack
         replay
+        // className="container"
+        style={{ height: windowheight }}
+      >
+ <Album/>
+      </ScrollOverPack>
+      <ScrollOverPack
+        replay
         className="container"
         style={{ height: windowheight }}
       >
-        <Texty>100咯</Texty>
+       
+       <QueueAnim
+          type={entryType}
+          interval={entryInterval}
+          duration={entryDuration}
+          leaveReverse
+        >
+          <div key="1">
+            <Texty className='dateP2'>今天是我们第100次见面</Texty>
+          </div>
+          <div key="2">
+            <Texty className='dateP1'>也是2022年第一次见面，新年快乐!</Texty>
+          </div>
+        </QueueAnim>
       </ScrollOverPack>
     </div>
   );

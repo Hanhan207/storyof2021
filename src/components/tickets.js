@@ -8,7 +8,7 @@ import ticket_l from '../assets/ticket_l.png'
 
 function Tickets(){
    
-    return(<div style={{display:'flex',flexDirection:'row'}} >
+    return(<div style={{display:'flex',flexDirection:'row',marginTop:16}} >
          <Parallax
         style={{transform:' translateX(-40px)',opacity: 0}}
         animation={{ x: 0, opacity: 1, playScale: [0.6, 0.8] }}
