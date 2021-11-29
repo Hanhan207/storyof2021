@@ -89,9 +89,6 @@
   margin: 3px;
 }
 
-
-
-
 .code-box-shape{
   width: 30px;
   height: 30px;
@@ -102,7 +99,27 @@
   transform: translateY(40px);
   opacity: 0;
 }
-.numStyle{
+.mycontent{
+  font-family: 'Song';
+  font-weight:normal;
+  text-align: left;
+  font-size:medium;
+}
+.num{
   font-size: larger;
-  color: red;
+  /* color: red; */
+  font-size: 32px;
+  /* background-color: red; */
+}
+
+/* 竖直居中布局 */
+.shude{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 250px;
+  margin: 16px;
+  
 }

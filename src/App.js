@@ -6,6 +6,10 @@ import DateCom from "./components/date";
 import Foodcolumn from "./components/column";
 import Mypath from "./components/line";
 import Park from "./components/park";
+import Fall from "./components/fall";
+import Mytext from "./components/mytext";
+import Mad from "./components/mad";
+import Tickets from './components/tickets'
 //动画库
 import Texty from "rc-texty";
 import ScrollAnim from "rc-scroll-anim";
@@ -103,7 +107,7 @@ function App() {
         <Foodcolumn />
 
         {/* <div dangerouslySetInnerHTML={{ __html:  data.date[0].des}} /> */}
-        {/* <div dangerouslySetInnerHTML={{ __html: '<div>123</div>' }} /> */}
+       <Mytext content={data.date[0].des}/>
       </ScrollOverPack>
       {/* P2 */}
       <ScrollOverPack
@@ -113,6 +117,7 @@ function App() {
       >
         <DateCom data={data.date[1]} />
         <Park />
+        <Mytext content={data.date[1].des}/>
       </ScrollOverPack>
       {/* P3 */}
       <ScrollOverPack
@@ -142,6 +147,7 @@ function App() {
             />
           </svg>
         </Parallax>
+        <Mytext content={data.date[2].des}/>
       </ScrollOverPack>
       {/* P4 */}
       <ScrollOverPack
@@ -150,6 +156,8 @@ function App() {
         style={{ height: windowheight }}
       >
         <DateCom data={data.date[3]} />
+        <Mad/>
+        <Mytext content={data.date[3].des}/>
       </ScrollOverPack>
       {/* P5 */}
       <ScrollOverPack
@@ -158,6 +166,8 @@ function App() {
         style={{ height: windowheight }}
       >
         <DateCom data={data.date[4]} />
+        <Fall/>
+        <Mytext content={data.date[4].des}/>
       </ScrollOverPack>
       {/* P6 */}
       <ScrollOverPack
@@ -166,6 +176,8 @@ function App() {
         style={{ height: windowheight }}
       >
         <DateCom data={data.date[5]} />
+        <Tickets/>
+        <Mytext content={data.date[5].des}/>
       </ScrollOverPack>
       {/* P7 */}
       <ScrollOverPack
