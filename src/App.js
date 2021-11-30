@@ -86,7 +86,7 @@ function App() {
     >
       {/* P0 */}
       <ScrollOverPack
-        replay
+        replay={false}
         className="container"
         style={{
           height: windowheight,
@@ -113,7 +113,7 @@ function App() {
       </ScrollOverPack>
       {/* P1 */}
       <ScrollOverPack
-        replay
+         replay={false}
         className="container"
         style={{ height: windowheight }}
       >
@@ -125,7 +125,7 @@ function App() {
       </ScrollOverPack>
       {/* P2 */}
       <ScrollOverPack
-        replay
+         replay={false}
         className="container"
         style={{ height: windowheight }}
       >
@@ -135,37 +135,20 @@ function App() {
       </ScrollOverPack>
       {/* P3 */}
       <ScrollOverPack
-        replay
+        replay={false}
         className="container"
         style={{ height: windowheight }}
+        
       >
         <DateCom data={data.date[2]} />
-        {/* <Mypath /> */}
-        <Parallax
-          className="up"
-          animation={{ y: 0, opacity: 1, playScale: [0.6, 0.8] }}
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="255"
-            height="461"
-            fill="none"
-            viewBox="0 0 255 461"
-          >
-            <path
-              ref={myroad}
-              id="road"
-              stroke="#000"
-              strokeWidth="6"
-              d="M254 6C226.667 0 164.2.7 133 51.5 94 115 140.5 185 121.5 236s-86 18.5-78.5 155c0 55.2-28 67.333-42 66.5"
-            />
-          </svg>
-        </Parallax>
+        
+        <Mypath />
+
         <Mytext content={data.date[2].des} />
       </ScrollOverPack>
       {/* P4 */}
       <ScrollOverPack
-        replay
+         replay={false}
         className="container"
         style={{ height: windowheight }}
       >
@@ -175,7 +158,7 @@ function App() {
       </ScrollOverPack>
       {/* P5 */}
       <ScrollOverPack
-        replay
+        replay={false}
         className="container"
         style={{ height: windowheight }}
       >
@@ -185,7 +168,7 @@ function App() {
       </ScrollOverPack>
       {/* P6 */}
       <ScrollOverPack
-        replay
+         replay={false}
         className="container"
         style={{ height: windowheight }}
       >
@@ -198,7 +181,7 @@ function App() {
       <Album wheight={windowheight} wwidth={widowwidth} />
 
       <ScrollOverPack
-        replay
+        replay={false}
         className="container"
         style={{ height: windowheight }}
       >

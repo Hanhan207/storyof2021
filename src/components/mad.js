@@ -19,7 +19,7 @@ function Mad() {
           style={{ marginBottom: -30 }}
         >
           <path
-            stroke="#000"
+            stroke="#F14456"
             strokeLinecap="round"
             strokeLinejoin="round"
             strokeWidth="2"
