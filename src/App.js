@@ -56,11 +56,7 @@ function App() {
         }
       }
     >
-      <Parallax
-       id='qiuqian1'
-        className="up"
-        animation={{ rotate: 30, playScale: [0.1, 0.8] }}
-      />
+      
       {/* <div id='qiuqian1'/> */}
       {/* <div id='qiuqian2'/> */}
       {/* P0 */}
