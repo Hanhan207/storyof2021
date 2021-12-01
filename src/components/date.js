@@ -13,35 +13,63 @@ function DateCom(e) {
   var weather = "sunny";
   var content = "特意穿了白色衣服";
   return (
-    <div className="daterapper">
-      <Parallax
-        className="up"
-        animation={{ y: 0, opacity: 1, playScale: [0.5, 0.8] }}
-      >
-        <div className="linebolck dateP1">
-          <div>
-            {info.month}月{info.day}日
+    <div style={{ align: "center", width: "80%", marginBottom: "-25%" }}>
+      <div className="daterapper">
+        <Parallax
+          className="up"
+          animation={{ y: 0, opacity: 1, playScale: [0.5, 0.8] }}
+        >
+          <div className="linebolck dateP1">
+            <div>
+              {info.monthSC} 月 {info.daySC} 日
+            </div>
+            {/* {info.weather} */}
           </div>
-          {info.weather}
-        </div>
-      </Parallax>
+        </Parallax>
+        <Parallax
+          className="dateP2 up"
+          animation={{ y: 0, opacity: 1, playScale: [0.5, 0.8] }}
+        >
+          第{info.count}次见面
+        </Parallax>
+        <Parallax
+          className="dateP1 up"
+          animation={{ y: 0, opacity: 1, playScale: [0.5, 0.8] }}
+        >
+          <span style={{ color: "#4864C5" }}>“</span>
+          {info.content}
+          <span style={{ color: "#4864C5" }}>”</span>
+        </Parallax>
+        <Parallax
+          className="up"
+          animation={{ y: 0, opacity: 1, playScale: [0.5, 0.8] }}
+          style={{
+            width: "80%",
+            borderBottom: "solid",
+            margin: "12px",
+            borderColor: "#BEB56D",
+            borderWidth: "2px",
+          }}
+        ></Parallax>
+      </div>
       <Parallax
-        className="dateP2 up"
-        animation={{ y: 0, opacity: 1, playScale: [0.5, 0.8] }}
+        style={{
+          transform: "translateY(10px)",
+          opacity: 0,
+          filter: "blur(0px)",
+          position: "relative",
+          top: "-80px",
+          fontSize: "48px",
+          fontFamily: "Song",
+          letterSpacing:'3px'
+        }}
+        animation={[
+          { y: 0, opacity: 1, playScale: [0.1, 0.2] },
+          { opacity: 0.2, blur: "10px", playScale: [0.2, 0.5] },
+        ]}
       >
-        第{info.count}次见面
+        No<span style={{color:'#4864C5'}}>.</span>{info.countN}
       </Parallax>
-      <Parallax
-        className="dateP1 up"
-        animation={{ y: 0, opacity: 1, playScale: [0.5, 0.8] }}
-      >
-        {info.content}
-      </Parallax>
-      <Parallax
-        className="up"
-        animation={{ y: 0, opacity: 1, playScale: [0.5, 0.8] }}
-        style={{ width: "80%", borderBottom: "solid", margin: "12px" }}
-      ></Parallax>
     </div>
   );
 }

@@ -28,7 +28,7 @@ const data = [
   },
 ];
 
-const colors = ["#F14456", "#2149DF", "#1BBC6B"];
+const colors = ["#E98102", "#BEB56D", "#1BBC6B"];
 
 function Foodcolumn() {
   useEffect(() => {

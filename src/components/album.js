@@ -115,7 +115,8 @@ function Album(e) {
     <div
       style={{
         // background: "red",
-        height: height * 1.42,
+        height: height * 1.5,
+        marginTop:'50px'
       }}
     >
       <div

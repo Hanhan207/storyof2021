@@ -19,8 +19,8 @@ const data = [
 ];
 
 function Park(e) {
-  const color = "l(90) 0:rgba(33, 73, 223, 1) 1:rgba(33, 73, 223, 0)";
-  const dot = "#2149DF";
+  const color = "l(90) 0:rgba(233, 129, 1, 1) 1:rgba(233, 129, 1, 0)";
+  const dot = "rgba(233, 129, 1, 1)";
   useEffect(() => {
     G2.registerShape("point", "breath-point", {
       draw(cfg, container) {
@@ -119,6 +119,10 @@ function Park(e) {
       yField: "value",
       xAxis: false,
       yAxis: false,
+      lineStyle:{
+// fill:'rgba(233, 129, 1, 1)'
+stroke:'rgba(233, 129, 1, 1)'
+      },
       meta: {
         value: {
           min: 0,
@@ -130,7 +134,6 @@ function Park(e) {
       },
       point: {
         shape: "breath-point",
-        // shape: "circle",
         size: 5,
       },
       animation: {

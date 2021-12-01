@@ -19,7 +19,7 @@ function Mad() {
           style={{ marginBottom: -30 }}
         >
           <path
-            stroke="#F14456"
+            stroke="#E98102"
             strokeLinecap="round"
             strokeLinejoin="round"
             strokeWidth="2"
@@ -39,7 +39,7 @@ function Mad() {
           viewBox="0 0 42 51"
         >
           <path
-            stroke="#000"
+            stroke="#BEB56D"
             strokeLinecap="round"
             strokeLinejoin="round"
             strokeWidth="2"
@@ -59,10 +59,10 @@ function Mad() {
           viewBox="0 0 184 64"
         >
           <path
-            stroke="#000"
+            stroke="#BEB56D"
             strokeLinecap="round"
             strokeLinejoin="round"
-            strokeWidth="2"
+            strokeWidth="3"
             d="M1.5 62.5L42 4l20.5 25m-39 14.5L34 29l8 6 4.5-6L56 42m-4 6.5l30.5-47H85M139.5 59L101 1.5h-2M114.5 29l11.393-14.5m36.607 34L145 26m-19.107-11.5L131 8l5.056 6.5m-10.163 0L131 21l5.056-6.5m0 0L145 26m0 0l6.5-9 10 13.5m5 4.5l3 5m3 5L183 59m-15-31.5l13 16m-96-42V8m0-6.5h8m0 0v26m0-26h6m0 0V8m0 3v6m-21 7L60.5 51m75.556-23.5l12.444 16M40.5 19l3-3"
           />
         </svg>

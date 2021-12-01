@@ -42,34 +42,6 @@ function App() {
   const myroad = useRef();
   var path = myroad.current;
   console.log(path);
-  // var pathLength = path.getTotalLength();
-  // path.style.strokeDasharray = pathLength + " " + pathLength;
-  // path.style.strokeDashoffset = pathLength;
-  // path.getBoundingClientRect();
-
-  // window.addEventListener("scroll", function (e) {
-  //   // What % down is it?
-  //   // https://stackoverflow.com/questions/2387136/cross-browser-method-to-determine-vertical-scroll-percentage-in-javascript/2387222#2387222
-  //   // Had to try three or four differnet methods here. Kind of a cross-browser nightmare.
-  //   var scrollPercentage =
-  //     (document.documentElement.scrollTop + document.body.scrollTop) /
-  //     (document.documentElement.scrollHeight -
-  //       document.documentElement.clientHeight);
-
-  //   // Length to offset the dashes
-  //   var drawLength = pathLength * scrollPercentage;
-
-  //   // Draw in reverse
-  //   path.style.strokeDashoffset = pathLength - drawLength;
-
-  //   // When complete, remove the dash array, otherwise shape isn't quite sharp
-  //   // Accounts for fuzzy math
-  //   if (scrollPercentage >= 0.99) {
-  //     path.style.strokeDasharray = "none";
-  //   } else {
-  //     path.style.strokeDasharray = pathLength + " " + pathLength;
-  //   }
-  // });
 
   return (
     <div
@@ -84,6 +56,13 @@ function App() {
         }
       }
     >
+      <Parallax
+       id='qiuqian1'
+        className="up"
+        animation={{ rotate: 30, playScale: [0.1, 0.8] }}
+      />
+      {/* <div id='qiuqian1'/> */}
+      {/* <div id='qiuqian2'/> */}
       {/* P0 */}
       <ScrollOverPack
         replay={false}

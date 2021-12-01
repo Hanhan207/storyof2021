@@ -1,6 +1,10 @@
 .App {
   text-align: center;
-  background-image: url('./assets/dust_scratches.png');
+  /* background-image: url('./assets/story2021.png'); */
+  background: rgba(237, 224, 208, 1);
+
+  /* background: '#1BBC6B'; */
+  color: '#260500';
 }
 
 .App-logo {
@@ -56,19 +60,21 @@
   align-items: center;
   justify-content: center;
   padding: 10%;
- 
+  background: '#EDE0D0';
   overflow: hidden;
-  /* border-style:solid; */
-  /* border-bottom: solid; */
-  /* border-bottom-width: 3px; */
+  /* border-left: red; */
 }
 
+
+
 .daterapper {
-  width: 80%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
 
 }
 
@@ -116,8 +122,9 @@
 
 .num {
   font-size: larger;
+  color:rgba(72, 100, 197, 1);
   /* color: red; */
-  font-size: 32px;
+  font-size: 36px;
   /* background-color: red; */
 }
 
@@ -131,4 +138,27 @@
   height: 250px;
   margin: 16px;
 
+}
+
+#qiuqian1{
+  content: "";
+  /* z-index:-1; */
+  display: block;
+  position: fixed;
+  height: 100%;
+  left:25%;
+  border-left: 1px solid #E98102;
+  opacity: 0.3;
+  transform: rotate(7deg);
+}
+
+#qiuqian2{
+  content: "";
+  /* z-index:-1; */
+  display: block;
+  position: fixed;
+  height: 100%;
+  right:15%;
+  opacity: 0.3;
+  border-right: 1px solid #E98102;
 }

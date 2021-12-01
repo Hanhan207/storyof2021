@@ -45,6 +45,16 @@ useEffect(() => {
         pieStyle: {
           lineWidth: 0,
         },
+        // colorField: 'type', // 部分图表使用 seriesField
+  color: ['#BEB56D', '#E98102', '#4864C5',"#260500"],
+  animation: {
+    // 配置图表第一次加载时的入场动画
+    appear: {
+      animation: 'wave-in', // 动画效果
+      duration: 5000,  // 动画执行时间
+    },
+  }
+        
       });
       
       piePlot.render();

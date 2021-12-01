@@ -71,7 +71,7 @@ function Mypath() {
           style={{
             fill: "none",
             strokeWidth: 10,
-            stroke: "#2149DF",
+            stroke: "#4864C5",
           }}
           component="path"
           strokeDasharray="10"
