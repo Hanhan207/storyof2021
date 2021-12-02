@@ -64,7 +64,7 @@ function DateCom(e) {
           letterSpacing:'3px'
         }}
         animation={[
-          { y: 0, opacity: 1, playScale: [0.2, 0.5] },
+          { y: 0, opacity: 1, playScale: [0.2, 0.3] },
           { opacity: 0.2, blur: "10px", playScale: [0.3, 0.5] },
         ]}
       >

@@ -11,6 +11,7 @@ import Mytext from "./components/mytext";
 import Mad from "./components/mad";
 import Tickets from "./components/tickets";
 import Album from "./components/album";
+import Face from "./components/face";
 //动画库
 import Texty from "rc-texty";
 import ScrollAnim from "rc-scroll-anim";
@@ -69,8 +70,8 @@ function App() {
           // alignItems: "center",
           // justifyContent: "center",
         }}
-      >
-        <QueueAnim
+      ><Face/>
+        {/* <QueueAnim
           type={entryType}
           interval={entryInterval}
           duration={entryDuration}
@@ -84,7 +85,7 @@ function App() {
               How many times have we met this year?
             </Texty>
           </div>
-        </QueueAnim>
+        </QueueAnim> */}
       </ScrollOverPack>
       {/* P1 */}
       <ScrollOverPack
