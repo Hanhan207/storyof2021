@@ -71,21 +71,6 @@ function App() {
           // justifyContent: "center",
         }}
       ><Face/>
-        {/* <QueueAnim
-          type={entryType}
-          interval={entryInterval}
-          duration={entryDuration}
-          leaveReverse
-        >
-          <div key="1">
-            <Texty className="dateP2">今天是我们第几次见面？</Texty>
-          </div>
-          <div key="2">
-            <Texty className="dateP1">
-              How many times have we met this year?
-            </Texty>
-          </div>
-        </QueueAnim> */}
       </ScrollOverPack>
       {/* P1 */}
       <ScrollOverPack

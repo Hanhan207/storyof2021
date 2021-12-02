@@ -6,8 +6,8 @@ import ticket_r from "../assets/ticket_r.png";
 import ticket_l from "../assets/ticket_l.png";
 
 function Album(e) {
-  const height = e.wheight;
-  const widht = e.wwidth;
+  const height = 812;
+  const widht = '375px';
   // console.log(e);
   const photos = [
     {
