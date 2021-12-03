@@ -1,6 +1,4 @@
 import "../App.css";
-import Texty from "rc-texty";
-// import ScrollAnim from 'rc-scroll-anim';
 import { Parallax } from "rc-scroll-anim";
 import ticket_r from "../assets/ticket_r1.png";
 import ticket_l from "../assets/ticket_l1.png";

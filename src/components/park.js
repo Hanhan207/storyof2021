@@ -1,6 +1,5 @@
 import "../App.css";
 import { Line, G2 } from "@antv/g2plot";
-import { each, findIndex } from "@antv/util";
 import { useEffect } from "react";
 import { Parallax } from "rc-scroll-anim";
 
@@ -119,9 +118,8 @@ function Park(e) {
       yField: "value",
       xAxis: false,
       yAxis: false,
-      lineStyle:{
-// fill:'rgba(233, 129, 1, 1)'
-stroke:'rgba(233, 129, 1, 1)'
+      lineStyle: {
+        stroke: "rgba(233, 129, 1, 1)",
       },
       meta: {
         value: {

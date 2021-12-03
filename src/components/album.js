@@ -1,14 +1,9 @@
 import "../App.css";
-import Texty from "rc-texty";
-// import ScrollAnim from 'rc-scroll-anim';
 import { Parallax } from "rc-scroll-anim";
-import ticket_r from "../assets/ticket_r.png";
-import ticket_l from "../assets/ticket_l.png";
 
 function Album(e) {
   const height = 812;
-  const widht = '375px';
-  // console.log(e);
+  const widht = "375px";
   const photos = [
     {
       id: 1,
@@ -103,20 +98,16 @@ function Album(e) {
   ];
 
   function time(index) {
-    //   console.log(index)
     var start = 0.1 + index / 20;
     var end = 0.2 + index / 20;
-    var time = [start, end];
-    // console.log(time);
     return [start, end];
   }
 
   return (
     <div
       style={{
-        // background: "red",
-        height: height * 1.5,
-        marginTop:'50px'
+        height: height * 1.3,
+        marginTop: "50px",
       }}
     >
       <div

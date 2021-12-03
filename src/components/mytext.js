@@ -1,11 +1,8 @@
 import "../App.css";
-import Texty from "rc-texty";
 import { Parallax } from "rc-scroll-anim";
-// import ScrollAnim from 'rc-scroll-anim';
 
 function Mytext(e) {
   var content = e.content;
-//   console.log(content);
 
   return (
     <Parallax

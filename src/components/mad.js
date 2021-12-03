@@ -1,11 +1,9 @@
 import "../App.css";
-import Texty from "rc-texty";
 import { Parallax } from "rc-scroll-anim";
-// import ScrollAnim from 'rc-scroll-anim';
 
 function Mad() {
   return (
-    <div className='shude'>
+    <div className="shude">
       <Parallax
         className="up"
         animation={{ y: 0, opacity: 1, playScale: [0.55, 0.7] }}

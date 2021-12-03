@@ -1,17 +1,8 @@
 import "../App.css";
-import Texty from "rc-texty";
 import { Parallax } from "rc-scroll-anim";
-// import ScrollAnim from 'rc-scroll-anim';
 
 function DateCom(e) {
   let info = e.data;
-  let text = "22<h1>100+</h1>2222";
-  var ani = "y: 0, opacity: 1, playScale: [0.5, 0.8]";
-  var month = "11";
-  var day = "4";
-  var count = "四";
-  var weather = "sunny";
-  var content = "特意穿了白色衣服";
   return (
     <div style={{ align: "center", width: "80%", marginBottom: "-25%" }}>
       <div className="daterapper">
@@ -61,14 +52,15 @@ function DateCom(e) {
           top: "-80px",
           fontSize: "48px",
           fontFamily: "Song",
-          letterSpacing:'3px'
+          letterSpacing: "3px",
         }}
         animation={[
           { y: 0, opacity: 1, playScale: [0.2, 0.3] },
           { opacity: 0.2, blur: "10px", playScale: [0.3, 0.5] },
         ]}
       >
-        No<span style={{color:'#4864C5'}}>.</span>{info.countN}
+        No<span style={{ color: "#4864C5" }}>.</span>
+        {info.countN}
       </Parallax>
     </div>
   );

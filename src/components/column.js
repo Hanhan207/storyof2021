@@ -1,9 +1,7 @@
 import "../App.css";
-// import  Texty from 'rc-texty';
 import { Column } from "@antv/g2plot";
 import { useEffect } from "react";
 import { Parallax } from "rc-scroll-anim";
-// import ScrollAnim from 'rc-scroll-anim';
 
 const data = [
   {
@@ -36,9 +34,8 @@ function Foodcolumn() {
       data,
       xField: "Type",
       yField: "Count",
-
       label: {
-        position: "middle", // 'top', 'bottom', 'middle',
+        position: "middle",
       },
       xAxis: {
         label: {
@@ -62,7 +59,6 @@ function Foodcolumn() {
         },
       },
     });
-
     columnPlot.render();
   });
   return (
