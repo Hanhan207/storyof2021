@@ -135,7 +135,11 @@ function Album(e) {
           >
             <img
               src={photo.src}
-              style={{ position: "absolute", top: photo.top, left: photo.left }}
+              style={{
+                position: "absolute",
+                top: photo.top,
+                left: photo.left,
+              }}
               alt=""
             />
           </Parallax>
