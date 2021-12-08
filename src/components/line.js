@@ -10,7 +10,6 @@ const mypath = [
   "M10,10c65,50,115,50,180,0",
 ];
 function Mypath() {
-  const [path, setpath] = useState(mypath[0]);
   const [linedata, setlinedata] = useState("20% 75%");
   const [mode, setMode] = useState(null);
   const dotanimation = {
@@ -19,20 +18,6 @@ function Mypath() {
     ease: "linear",
   };
 
-  function gundaole(e) {
-    console.log("e", e);
-    if (e === "enter") {
-      setMode("enter");
-      setlinedata("100%");
-    } else {
-      setlinedata(0);
-    }
-    console.log(linedata);
-  }
-
-  function change(e) {
-    console.log("change", e);
-  }
 
   return (
     <div style={{ marginBottom: "-35%", padding: "4px", position: "relative" }}>
@@ -105,7 +90,7 @@ function Mypath() {
           viewBox="0 0 255 461"
         >
           <TweenOne
-            animation={{ SVGDraw: linedata, duration: 2000, opacity: 1 }}
+            animation={{ SVGDraw: linedata, duration: 4000, opacity: 1 }}
             resetStyle="false"
             style={{
               fill: "none",
