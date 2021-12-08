@@ -6,15 +6,15 @@ import { Parallax } from "rc-scroll-anim";
 const { InteractionAction, registerInteraction, registerAction } = G2;
 
 const data = [
-  { year: "1991", value: 3 },
-  { year: "1992", value: 4 },
-  { year: "1993", value: 3.5 },
-  { year: "1994", value: 5 },
-  { year: "1995", value: 4.9 },
-  { year: "1996", value: 6 },
-  { year: "1997", value: 7 },
-  { year: "1998", value: 9 },
-  { year: "1999", value: 13 },
+  // { year: "1991", value: 3 },
+  // { year: "1992", value: 4 },
+  // { year: "1993", value: 3.5 },
+  { year: "天坛公园", value: 49 },
+  { year: "元大都遗址公园", value: 52 },
+  { year: "北京动物园", value: 56 },
+  { year: "奥林匹克公园", value: 86.5 },
+  { year: "颐和园", value: 140 },
+  { year: "八大处", value: 465 },
 ];
 
 function Park(e) {
@@ -26,7 +26,7 @@ function Park(e) {
         const data = cfg.data;
         const point = { x: cfg.x, y: cfg.y };
         const group = container.addGroup();
-        if (data.year === "1999" && data.value === 13) {
+        if (data.year === "八大处" && data.value === 465) {
           const decorator1 = group.addShape("circle", {
             attrs: {
               x: point.x,
@@ -124,7 +124,7 @@ function Park(e) {
       meta: {
         value: {
           min: 0,
-          max: 15,
+          max: 500,
         },
       },
       area: {

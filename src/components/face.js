@@ -46,7 +46,9 @@ function Han() {
 function Face(e) {
   const scale = [0.6, 0.9];
   return (
-    <div>
+    <div
+   
+    >
       <Parallax
         style={{
           transform: "translateY(30px)",
@@ -61,7 +63,6 @@ function Face(e) {
         <Lu />
         <Han />
       </Parallax>
-
       <div
         style={{
           display: "flex",

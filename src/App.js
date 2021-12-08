@@ -77,6 +77,7 @@ function App() {
         className="container"
         style={{
           height: windowheight,
+          paddingTop:'40%'
         }}
       >
         <Face />
@@ -85,7 +86,7 @@ function App() {
       <ScrollOverPack
         replay={false}
         className="container"
-        style={{ height: windowheight }}
+        style={{ height: windowheight,marginTop:'-20%' }}
       >
         <DateCom data={data.date[0]} />
         <Foodcolumn />
