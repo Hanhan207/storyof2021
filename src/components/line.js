@@ -20,7 +20,7 @@ function Mypath() {
 
 
   return (
-    <div style={{ marginBottom: "-35%", padding: "4px", position: "relative" }}>
+    <div style={{  padding: "4px", position: "relative" }}>
       <Parallax
         style={{ transform: "translateX(40px)", opacity: 0 }}
         animation={{ x: 0, opacity: 1, playScale: [0.6, 0.8] }}
@@ -80,7 +80,7 @@ function Mypath() {
       <Parallax
         className="up"
         animation={{ y: 0, opacity: 1, playScale: [0.6, 0.8] }}
-        // onChange={(e) => gundaole(e)}
+        style={{marginBottom:'-100px'}}
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"

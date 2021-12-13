@@ -104,16 +104,22 @@ function Album(e) {
   }
 
   return (
-    <div
-      style={{
-        height: height * 1.3,
-        marginTop: "50px",
-      }}
-    >
+    // <div
+    //   style={{
+    //     height: height * 1.3,
+    //     marginTop: "50px",
+    //     // width:'800px'
+    //     // display:'flex',
+    //     // flexDirection:'column',
+    //     // alignItems:'center'
+    //   }}
+    // >
       <div
         style={{
-          height: "100%",
-          width: "100%",
+          padding:widht*0.1,
+          // height: "100%",
+          height:height * 1.3,
+          width:widht,
           position: "realative",
           overflowX: "hidden",
           overflowY: "visible",
@@ -145,7 +151,7 @@ function Album(e) {
           </Parallax>
         ))}
       </div>
-    </div>
+    // </div>
   );
 }
 

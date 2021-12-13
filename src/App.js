@@ -54,10 +54,6 @@ function Heart() {
 }
 
 function App() {
-  const mypath = [
-    "M254 6C226.667 0 164.2.7 133 51.5 94 115 140.5 185 121.5 236s-86 18.5-78.5 155c0 55.2-28 67.333-42 66.5",
-    "M10,10c65,50,115,50,180,0",
-  ];
   const windowheight = document.documentElement.clientHeight * 0.8;
   const widowwidth = document.documentElement.clientWidth;
 
@@ -77,16 +73,16 @@ function App() {
         className="container"
         style={{
           height: windowheight,
-          paddingTop:'40%'
+          
         }}
       >
-        <Face />
+        <Face  />
       </ScrollOverPack>
       {/* P1 */}
       <ScrollOverPack
         replay={false}
         className="container"
-        style={{ height: windowheight,marginTop:'-20%' }}
+        style={{ height: windowheight, }}
       >
         <DateCom data={data.date[0]} />
         <Foodcolumn />
@@ -143,14 +139,16 @@ function App() {
         <Mytext content={data.date[5].des} />
       </ScrollOverPack>
       {/* P7 */}
+      <div style={{display:'flex',flexDirection:'column',alignItems:'center'}}>
       <Album wheight={windowheight} wwidth={widowwidth} />
+      </div>
       <ScrollOverPack
         replay={false}
         className="container"
         style={{ height: windowheight }}
       >
-        <div style={{ align: "center", width: "80%", marginTop: "-65%" }}>
-          <div className="daterapper">
+        <div style={{ align: "center", width: "80%", marginTop:'-100px',marginBottom:'30px'  }}>
+          <div id='end'>
             <Parallax
               className="up"
               animation={{ y: 0, opacity: 1, playScale: [0.3, 0.5] }}
@@ -175,7 +173,7 @@ function App() {
               className="up"
               animation={{ y: 0, opacity: 1, playScale: [0.3, 0.5] }}
               style={{
-                width: "80%",
+                width: "240px",
                 borderBottom: "solid",
                 margin: "12px",
                 borderColor: "#BEB56D",

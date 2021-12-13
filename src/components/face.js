@@ -46,9 +46,7 @@ function Han() {
 function Face(e) {
   const scale = [0.6, 0.9];
   return (
-    <div
-   
-    >
+    <div>
       <Parallax
         style={{
           transform: "translateY(30px)",
@@ -63,17 +61,18 @@ function Face(e) {
         <Lu />
         <Han />
       </Parallax>
-      <div
+      <Parallax
         style={{
           display: "flex",
           flexDirection: "row",
           marginTop: "25%",
           alignItems: "start",
+          transform: "translateY(60px)"
         }}
+        animation={{ y: 0, playScale: scale }}
       >
         <Parallax
           style={{
-            transform: "translateY(-60px)",
             fontFamily: "Song",
             fontSize: "18px",
             opacity: 0,
@@ -94,7 +93,7 @@ function Face(e) {
         </Parallax>
         <Parallax
           style={{
-            transform: "translateY(-60px)",
+            // transform: "translateY(60px)",
             fontFamily: "Song",
             fontSize: "18px",
             opacity: 0,
@@ -103,12 +102,13 @@ function Face(e) {
         >
           ?
         </Parallax>
-      </div>
+      </Parallax>
       <Parallax
         style={{
           fontFamily: "Song",
           fontSize: "12px",
           opacity: 0,
+          transform: "translateY(60px)"
         }}
         animation={{ y: 0, opacity: 1, playScale: scale }}
       >

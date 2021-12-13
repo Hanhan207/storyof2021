@@ -1,10 +1,11 @@
 import "../App.css";
 import { Parallax } from "rc-scroll-anim";
+import { Lu, Han } from "./face";
 
 function DateCom(e) {
   let info = e.data;
   return (
-    <div style={{ align: "center", width: "80%", marginBottom: "-25%" }}>
+    <div style={{ align: "center", width: "80%" }}>
       <div className="daterapper">
         <Parallax
           className="up"
@@ -33,9 +34,14 @@ function DateCom(e) {
         </Parallax>
         <Parallax
           className="up"
-          animation={{ y: 0, opacity: 1, playScale: [0.5, 0.8] }}
+          animation={{
+            y: 0,
+            width: "240px",
+            opacity: 1,
+            playScale: [0.5, 0.8],
+          }}
           style={{
-            width: "80%",
+            width: "0px",
             borderBottom: "solid",
             margin: "12px",
             borderColor: "#BEB56D",
@@ -48,19 +54,30 @@ function DateCom(e) {
           transform: "translateY(30px)",
           opacity: 0,
           filter: "blur(0px)",
-          position: "relative",
-          top: "-80px",
+          // position: "relative",
+
+          // top: "-40px",
           fontSize: "48px",
           fontFamily: "Song",
           letterSpacing: "3px",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          justifyContent: "center",
         }}
         animation={[
           { y: 0, opacity: 1, playScale: [0.2, 0.3] },
           { opacity: 0.2, blur: "10px", playScale: [0.3, 0.5] },
         ]}
       >
-        No<span style={{ color: "#4864C5" }}>.</span>
-        {info.countN}
+        <div>
+          No<span style={{ color: "#4864C5" }}>.</span>
+          {info.countN}
+        </div>
+        <div className="linebolck" style={{marginTop:'20px'}}>
+          <Lu />
+          <Han />
+        </div>
       </Parallax>
     </div>
   );

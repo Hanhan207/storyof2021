@@ -60,6 +60,7 @@
   padding: 10%;
   background: '#EDE0D0';
   overflow: hidden;
+  /* border:solid 2px blue */
 }
 
 
@@ -72,7 +73,18 @@
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: -180px;
+}
 
+#end{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: -30px;
 }
 
 .linebolck {
