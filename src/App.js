@@ -11,6 +11,7 @@ import Mad from "./components/mad";
 import Tickets from "./components/tickets";
 import Album from "./components/album";
 import { Face, Lu, Han } from "./components/face";
+import Realistic from "./components/firework"
 //动画库
 
 import ScrollAnim from "rc-scroll-anim";
@@ -43,9 +44,9 @@ function Heart() {
       >
         <path
           stroke="#E98102"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="2"
           d="M13.5 1.5C6.598 1.5 1 7.04 1 13.875c0 5.517 2.188 18.612 23.72 31.85a2.462 2.462 0 002.56 0C48.812 32.487 51 19.392 51 13.875 51 7.04 45.403 1.5 38.5 1.5 31.598 1.5 26 9 26 9s-5.598-7.5-12.5-7.5z"
         />
       </svg>
@@ -53,9 +54,12 @@ function Heart() {
   );
 }
 
+
+
 function App() {
-  const windowheight = document.documentElement.clientHeight * 0.8;
+  const windowheight = document.documentElement.clientHeight * 0.9;
   const widowwidth = document.documentElement.clientWidth;
+  const el = useRef(null)
 
   //入场动画参数
   const entryType = "bottom";
@@ -73,16 +77,15 @@ function App() {
         className="container"
         style={{
           height: windowheight,
-          
         }}
       >
-        <Face  />
+        <Face />
       </ScrollOverPack>
       {/* P1 */}
       <ScrollOverPack
         replay={false}
         className="container"
-        style={{ height: windowheight, }}
+        style={{ height: windowheight }}
       >
         <DateCom data={data.date[0]} />
         <Foodcolumn />
@@ -139,16 +142,30 @@ function App() {
         <Mytext content={data.date[5].des} />
       </ScrollOverPack>
       {/* P7 */}
-      <div style={{display:'flex',flexDirection:'column',alignItems:'center'}}>
-      <Album wheight={windowheight} wwidth={widowwidth} />
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+        }}
+      >
+        <Album wheight={windowheight} wwidth={widowwidth} />
       </div>
+
       <ScrollOverPack
         replay={false}
         className="container"
         style={{ height: windowheight }}
       >
-        <div style={{ align: "center", width: "80%", marginTop:'-100px',marginBottom:'30px'  }}>
-          <div id='end'>
+        <div
+          style={{
+            align: "center",
+            width: "80%",
+            marginTop: "-100px",
+            marginBottom: "30px",
+          }}
+        >
+          <div id="end">
             <Parallax
               className="up"
               animation={{ y: 0, opacity: 1, playScale: [0.3, 0.5] }}
@@ -192,7 +209,7 @@ function App() {
               letterSpacing: "3px",
             }}
             animation={[
-              { opacity: 1, playScale: [0.1, 0.2] },
+              { opacity: 1, playScale: [0.1, 0.2],},
               { opacity: 0.2, blur: "10px", playScale: [0.2, 0.3] },
             ]}
           >
@@ -200,6 +217,7 @@ function App() {
           </Parallax>
         </div>
         <Parallax
+        
           style={{
             transform: "translateY(30px)",
             opacity: 0,
@@ -209,8 +227,9 @@ function App() {
             justifyContent: "center",
           }}
           animation={[
-            { y: 0, opacity: 1, playScale: [0.2, 0.3] },
-            { opacity: 0.1, blur: "20px", playScale: [0.6, 0.7] },
+            { y: 0, opacity: 1, playScale: [0.2, 0.3],onComplete:()=>{el.current.fire()
+            }   },
+            { opacity: 0.1, blur: "20px", playScale: [0.6, 0.7],},
           ]}
         >
           <Lu />
@@ -218,6 +237,7 @@ function App() {
           <Han />
         </Parallax>
       </ScrollOverPack>
+      <Realistic ref={el}/>
     </div>
   );
 }

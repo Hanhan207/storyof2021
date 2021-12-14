@@ -67,16 +67,40 @@ function DateCom(e) {
         }}
         animation={[
           { y: 0, opacity: 1, playScale: [0.2, 0.3] },
-          { opacity: 0.2, blur: "10px", playScale: [0.3, 0.5] },
+          { opacity: 0.1, blur: "10px", playScale: [0.3, 0.5] },
         ]}
       >
         <div>
           No<span style={{ color: "#4864C5" }}>.</span>
           {info.countN}
         </div>
-        <div className="linebolck" style={{marginTop:'20px'}}>
-          <Lu />
-          <Han />
+        <div className="linebolck" style={{ marginTop: "30px" }}>
+          <Parallax
+            style={{
+              transform: "translateX(-20px)",
+            }}
+            animation={[{ x: 0, playScale: [0.2, 0.5] }]}
+          >
+            <img style={{ height: "70px" }} src={info.lusrc} alt="" />
+          </Parallax>
+          <Parallax
+            style={{
+              transform: "translateY(20px)",
+              marginLeft: "-10%",
+              marginRight: "-10%",
+            }}
+            animation={[{ y: -25, opacity: 1, playScale: [0.2, 0.5] }]}
+          >
+            <img style={{ width: "50px" }} src={info.midsrc} alt="" />
+          </Parallax>
+          <Parallax
+            style={{
+              transform: "translateX(20px)",
+            }}
+            animation={[{ x: 0, opacity: 1, playScale: [0.2, 0.5] }]}
+          >
+            <img style={{ height: "70px" }} src={info.hansrc} alt="" />
+          </Parallax>
         </div>
       </Parallax>
     </div>
