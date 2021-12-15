@@ -3,6 +3,7 @@ import { Parallax } from "rc-scroll-anim";
 
 const mWidth = "100";
 const mHeight = "100";
+const font = "'Noto Serif SC', serif"
 
 function Lu() {
   return (
@@ -73,7 +74,7 @@ function Face(e) {
       >
         <Parallax
           style={{
-            fontFamily: "Song",
+            fontFamily: font,
             fontSize: "18px",
             opacity: 0,
           }}
@@ -83,7 +84,7 @@ function Face(e) {
         </Parallax>
         <Parallax
           style={{
-            fontFamily: "Song",
+            fontFamily:font,
             fontSize: "72px",
             color: "#4864C5",
           }}
@@ -94,7 +95,7 @@ function Face(e) {
         <Parallax
           style={{
             // transform: "translateY(60px)",
-            fontFamily: "Song",
+            fontFamily: font,
             fontSize: "18px",
             opacity: 0,
           }}
@@ -105,7 +106,7 @@ function Face(e) {
       </Parallax>
       <Parallax
         style={{
-          fontFamily: "Song",
+          fontFamily: font,
           fontSize: "12px",
           opacity: 0,
           transform: "translateY(60px)"

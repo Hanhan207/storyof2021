@@ -23,9 +23,6 @@ function Fall() {
     },
   ];
 
-  function getcontent(e) {
-    console.log("e", e);
-  }
   useEffect(() => {
     const piePlot = new Pie("pie", {
       appendPadding: 10,

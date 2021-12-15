@@ -1,22 +1,20 @@
 import "../App.css";
 import TweenOne from "rc-tween-one";
-import { useState } from "react";
+// import { useState } from "react";
 import SvgDrawPlugin from "rc-tween-one/lib/plugin/SvgDrawPlugin";
 import { Parallax } from "rc-scroll-anim";
 TweenOne.plugins.push(SvgDrawPlugin);
 
-const mypath = [
-  "M254 6C226.667 0 164.2.7 133 51.5 94 115 140.5 185 121.5 236s-86 18.5-78.5 155c0 55.2-28 67.333-42 66.5",
-  "M10,10c65,50,115,50,180,0",
-];
+
 function Mypath() {
-  const [linedata, setlinedata] = useState("20% 75%");
-  const [mode, setMode] = useState(null);
-  const dotanimation = {
-    path: "M10,10c65,50,115,50,180,0",
-    duration: 200,
-    ease: "linear",
-  };
+  // const [linedata, setlinedata] = useState("20% 75%");
+  const linedata = "20% 75%"
+  // const [mode, setMode] = useState(null);
+  // const dotanimation = {
+  //   path: "M10,10c65,50,115,50,180,0",
+  //   duration: 200,
+  //   ease: "linear",
+  // };
 
 
   return (

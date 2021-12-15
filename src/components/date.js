@@ -1,6 +1,7 @@
 import "../App.css";
 import { Parallax } from "rc-scroll-anim";
-import { Lu, Han } from "./face";
+
+const font ="'Noto Serif SC', serif"
 
 function DateCom(e) {
   let info = e.data;
@@ -54,11 +55,8 @@ function DateCom(e) {
           transform: "translateY(30px)",
           opacity: 0,
           filter: "blur(0px)",
-          // position: "relative",
-
-          // top: "-40px",
           fontSize: "48px",
-          fontFamily: "Song",
+          fontFamily: font,
           letterSpacing: "3px",
           display: "flex",
           flexDirection: "column",

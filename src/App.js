@@ -1,5 +1,5 @@
 import "./App.css";
-import { useEffect, useState, useRef } from "react";
+import {  useRef } from "react";
 //自设组件
 import DateCom from "./components/date";
 import Foodcolumn from "./components/column";
@@ -11,7 +11,7 @@ import Mad from "./components/mad";
 import Tickets from "./components/tickets";
 import Album from "./components/album";
 import { Face, Lu, Han } from "./components/face";
-import Realistic from "./components/firework"
+import Realistic from "./components/firework";
 //动画库
 
 import ScrollAnim from "rc-scroll-anim";
@@ -22,7 +22,6 @@ import data from "./assets/data";
 
 const ScrollOverPack = ScrollAnim.OverPack;
 
-const colors = ["#F14456", "#2149DF", "#1BBC6B"];
 
 function Heart() {
   return (
@@ -54,17 +53,15 @@ function Heart() {
   );
 }
 
-
-
 function App() {
   const windowheight = document.documentElement.clientHeight * 0.9;
   const widowwidth = document.documentElement.clientWidth;
-  const el = useRef(null)
+  const el = useRef(null);
 
   //入场动画参数
-  const entryType = "bottom";
-  const entryInterval = 500;
-  const entryDuration = 800;
+  // const entryType = "bottom";
+  // const entryInterval = 500;
+  // const entryDuration = 800;
   const myroad = useRef();
   var path = myroad.current;
   console.log(path);
@@ -205,11 +202,11 @@ function App() {
               position: "relative",
               top: "-80px",
               fontSize: "48px",
-              fontFamily: "Song",
+              fontFamily: "'Noto Serif SC', serif",
               letterSpacing: "3px",
             }}
             animation={[
-              { opacity: 1, playScale: [0.1, 0.2],},
+              { opacity: 1, playScale: [0.1, 0.2] },
               { opacity: 0.2, blur: "10px", playScale: [0.2, 0.3] },
             ]}
           >
@@ -217,7 +214,9 @@ function App() {
           </Parallax>
         </div>
         <Parallax
-        
+        onClick={() => {
+          console.log('fire')
+          el.current.fire();}}
           style={{
             transform: "translateY(30px)",
             opacity: 0,
@@ -227,17 +226,33 @@ function App() {
             justifyContent: "center",
           }}
           animation={[
-            { y: 0, opacity: 1, playScale: [0.2, 0.3],onComplete:()=>{el.current.fire()
-            }   },
-            { opacity: 0.1, blur: "20px", playScale: [0.6, 0.7],},
+            {
+              y: 0,
+              opacity: 1,
+              playScale: [0.2, 0.3],
+              onComplete: () => {
+                el.current.fire();
+              },
+            },
+            { opacity: 0.1, blur: "20px", playScale: [0.6, 0.7] },
           ]}
         >
-          <Lu />
-          <Heart />
+          <Lu  />
+          <Heart
+          // style={{zIndex:3}}
+          onClick={() => {
+            console.log('fire')
+            el.current.fire();}}
+           
+          />
+          {/* <button style={{zIndex:2}} onClick={() => {
+            console.log('fire')
+            el.current.fire();
+          }}>fire</button> */}
           <Han />
         </Parallax>
       </ScrollOverPack>
-      <Realistic ref={el}/>
+      <Realistic ref={el} />
     </div>
   );
 }

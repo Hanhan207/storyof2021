@@ -3,7 +3,7 @@ import { Line, G2 } from "@antv/g2plot";
 import { useEffect } from "react";
 import { Parallax } from "rc-scroll-anim";
 
-const { InteractionAction, registerInteraction, registerAction } = G2;
+// const { InteractionAction, registerInteraction, registerAction } = G2;
 
 const data = [
   // { year: "1991", value: 3 },
