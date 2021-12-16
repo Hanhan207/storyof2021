@@ -1,18 +1,17 @@
 {
   "files": {
-    "main.css": "/storyof2021/static/css/main.5a26f890.chunk.css",
-    "main.js": "/storyof2021/static/js/main.8ec0e759.chunk.js",
-    "main.js.map": "/storyof2021/static/js/main.8ec0e759.chunk.js.map",
-    "runtime-main.js": "/storyof2021/static/js/runtime-main.bb893f5e.js",
-    "runtime-main.js.map": "/storyof2021/static/js/runtime-main.bb893f5e.js.map",
-    "static/js/2.4716c172.chunk.js": "/storyof2021/static/js/2.4716c172.chunk.js",
-    "static/js/2.4716c172.chunk.js.map": "/storyof2021/static/js/2.4716c172.chunk.js.map",
-    "static/js/3.73ee8949.chunk.js": "/storyof2021/static/js/3.73ee8949.chunk.js",
-    "static/js/3.73ee8949.chunk.js.map": "/storyof2021/static/js/3.73ee8949.chunk.js.map",
+    "main.css": "/storyof2021/static/css/main.b52d04c2.chunk.css",
+    "main.js": "/storyof2021/static/js/main.d8d7a056.chunk.js",
+    "main.js.map": "/storyof2021/static/js/main.d8d7a056.chunk.js.map",
+    "runtime-main.js": "/storyof2021/static/js/runtime-main.3dff055c.js",
+    "runtime-main.js.map": "/storyof2021/static/js/runtime-main.3dff055c.js.map",
+    "static/js/2.549d70d7.chunk.js": "/storyof2021/static/js/2.549d70d7.chunk.js",
+    "static/js/2.549d70d7.chunk.js.map": "/storyof2021/static/js/2.549d70d7.chunk.js.map",
+    "static/js/3.075f8381.chunk.js": "/storyof2021/static/js/3.075f8381.chunk.js",
+    "static/js/3.075f8381.chunk.js.map": "/storyof2021/static/js/3.075f8381.chunk.js.map",
     "index.html": "/storyof2021/index.html",
-    "static/css/main.5a26f890.chunk.css.map": "/storyof2021/static/css/main.5a26f890.chunk.css.map",
-    "static/js/2.4716c172.chunk.js.LICENSE.txt": "/storyof2021/static/js/2.4716c172.chunk.js.LICENSE.txt",
-    "static/media/App.css": "/storyof2021/static/media/SourceHanSerifSC-VF.2171f746.woff2",
+    "static/css/main.b52d04c2.chunk.css.map": "/storyof2021/static/css/main.b52d04c2.chunk.css.map",
+    "static/js/2.549d70d7.chunk.js.LICENSE.txt": "/storyof2021/static/js/2.549d70d7.chunk.js.LICENSE.txt",
     "static/media/p01.png": "/storyof2021/static/media/p01.48639569.png",
     "static/media/p02.png": "/storyof2021/static/media/p02.c85ad491.png",
     "static/media/p03.png": "/storyof2021/static/media/p03.98af6521.png",
@@ -33,9 +32,9 @@
     "static/media/winterhan.png": "/storyof2021/static/media/winterhan.9e47b799.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.bb893f5e.js",
-    "static/js/2.4716c172.chunk.js",
-    "static/css/main.5a26f890.chunk.css",
-    "static/js/main.8ec0e759.chunk.js"
+    "static/js/runtime-main.3dff055c.js",
+    "static/js/2.549d70d7.chunk.js",
+    "static/css/main.b52d04c2.chunk.css",
+    "static/js/main.d8d7a056.chunk.js"
   ]
 }
