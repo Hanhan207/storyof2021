@@ -1,5 +1,5 @@
 import "./App.css";
-import {  useRef } from "react";
+import { useRef ,useEffect,useState} from "react";
 //自设组件
 import DateCom from "./components/date";
 import Foodcolumn from "./components/column";
@@ -21,7 +21,6 @@ import { Parallax } from "rc-scroll-anim";
 import data from "./assets/data";
 
 const ScrollOverPack = ScrollAnim.OverPack;
-
 
 function Heart() {
   return (
@@ -58,14 +57,6 @@ function App() {
   const widowwidth = document.documentElement.clientWidth;
   const el = useRef(null);
 
-  //入场动画参数
-  // const entryType = "bottom";
-  // const entryInterval = 500;
-  // const entryDuration = 800;
-  const myroad = useRef();
-  var path = myroad.current;
-  console.log(path);
-
   return (
     <div className="App">
       {/* P0 */}
@@ -87,6 +78,7 @@ function App() {
         <DateCom data={data.date[0]} />
         <Foodcolumn />
         <Mytext content={data.date[0].des} />
+        
       </ScrollOverPack>
       {/* P2 */}
       <ScrollOverPack
@@ -214,9 +206,10 @@ function App() {
           </Parallax>
         </div>
         <Parallax
-        onClick={() => {
-          console.log('fire')
-          el.current.fire();}}
+          onClick={() => {
+            console.log("fire");
+            el.current.fire();
+          }}
           style={{
             transform: "translateY(30px)",
             opacity: 0,
@@ -237,13 +230,13 @@ function App() {
             { opacity: 0.1, blur: "20px", playScale: [0.6, 0.7] },
           ]}
         >
-          <Lu  />
+          <Lu />
           <Heart
-          // style={{zIndex:3}}
-          onClick={() => {
-            console.log('fire')
-            el.current.fire();}}
-           
+            // style={{zIndex:3}}
+            onClick={() => {
+              console.log("fire");
+              el.current.fire();
+            }}
           />
           {/* <button style={{zIndex:2}} onClick={() => {
             console.log('fire')
