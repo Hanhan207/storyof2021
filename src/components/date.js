@@ -76,8 +76,9 @@ function DateCom(e) {
           <Parallax
             style={{
               transform: "translateX(-20px)",
+              opacity:0
             }}
-            animation={[{ x: 0, playScale: [0.2, 0.5] }]}
+            animation={[{ x: 0, opacity: 1,playScale: [0.2, 0.5] }]}
           >
             <img style={{ height: "70px" }} src={info.lusrc} alt="" />
           </Parallax>
@@ -86,6 +87,7 @@ function DateCom(e) {
               transform: "translateY(20px)",
               marginLeft: "-10%",
               marginRight: "-10%",
+              opacity: 0,
             }}
             animation={[{ y: -25, opacity: 1, playScale: [0.2, 0.5] }]}
           >
@@ -93,7 +95,7 @@ function DateCom(e) {
           </Parallax>
           <Parallax
             style={{
-              transform: "translateX(20px)",
+              transform: "translateX(20px)",opacity:0
             }}
             animation={[{ x: 0, opacity: 1, playScale: [0.2, 0.5] }]}
           >

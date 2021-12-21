@@ -6,9 +6,6 @@ import { Parallax } from "rc-scroll-anim";
 // const { InteractionAction, registerInteraction, registerAction } = G2;
 
 const data = [
-  // { year: "1991", value: 3 },
-  // { year: "1992", value: 4 },
-  // { year: "1993", value: 3.5 },
   { year: "天坛公园", value: 49 },
   { year: "元大都遗址公园", value: 52 },
   { year: "北京动物园", value: 56 },

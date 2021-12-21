@@ -1,9 +1,65 @@
 import "../App.css";
+import { useEffect } from "react";
 import { Parallax } from "rc-scroll-anim";
+import { Scatter } from '@antv/g2plot';
+
+const data = [
+  {"id":1,"time":3.3,"date":"3月13日","duration":7,"line":1},
+  {"id":2,"time":5.5,"date":"5月15日","duration":5,"line":1},
+  {"id":3,"time":5.8,"date":"5月20日","duration":2,"line":1},
+  {"id":4,"time":6.9,"date":"6月30日","duration":4,"line":1},
+  {"id":5,"time":7.1,"date":"7月4日","duration":5,"line":1},
+  {"id":6,"time":7.8,"date":"7月26日","duration":12,"line":1},
+  {"id":7,"time":8.7,"date":"8月22日","duration":3,"line":1},
+  {"id":8,"time":8.8,"date":"8月25日","duration":4,"line":1},
+  {"id":9,"time":11.7,"date":"11月26日","duration":1,"line":1},
+  {"id":10,"time":12.4,"date":"12月8日","duration":4,"line":1}
+  ]
 
 function Mad() {
+
+  // useEffect(() => {
+  //   const scatterPlot = new Scatter('scatter', {
+  //     // appendPadding: 10,
+  //     data,
+  //     xField: 'time',
+  //     yField: 'line',
+  //     shape: 'circle',
+  //     sizeField:'duration',
+  //     size: [1,12],
+  //     pointStyle: {
+  //       fillOpacity: 0.8,
+  //       stroke: '#bbb',
+  //     },
+  //     yAxis: {
+  //       // nice: true,
+  //       line: {
+  //         style: {
+  //           stroke: '#aaa',
+  //         },
+  //       },
+  //     },
+  //     xAxis: {
+  //       min: 1,
+  //       grid: {
+  //         line: {
+  //           style: {
+  //             stroke: '#eee',
+  //           },
+  //         },
+  //       },
+  //       line: {
+  //         style: {
+  //           stroke: '#aaa',
+  //         },
+  //       },
+  //     },
+  //   });
+  //   // scatterPlot.render();
+  // })
   return (
     <div className="shude">
+      {/* <div id="scatter" style={{width:'300px',height:'400px'}}></div> */}
       <Parallax
         className="up"
         animation={{ y: 0, opacity: 1, playScale: [0.55, 0.7] }}

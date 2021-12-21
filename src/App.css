@@ -1,7 +1,8 @@
 .App {
   text-align: center;
   /* background-image: url('./assets/story2021.png'); */
-  background: rgba(237, 224, 208, 1);
+  /* background: rgba(237, 224, 208, 1); */
+  background-image: repeating-linear-gradient(-50deg,#F2DDC2, #EDE0D0, #F2DDC2 );
   color: '#260500';
 }
 
