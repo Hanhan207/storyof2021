@@ -81,7 +81,7 @@ const date = [
     hansrc: require("../assets/avatars/moviehan.png").default,
     midsrc: require("../assets/avatars/moviemid.png").default,
     content: "007怎么在最后没了啊",
-    des:'2021年我们一起看了<span class="num"> 11 </span>场电影，詹姆斯邦德的结局或许遗憾，但是和你一起度过的这一年十分美满。'
+    des:'2021年我们一起看了<span class="num"> 12 </span>场电影，詹姆斯邦德的结局或许遗憾，但是和你一起度过的这一年十分美满。'
   },
 ];
 

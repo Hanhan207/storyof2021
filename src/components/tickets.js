@@ -4,6 +4,7 @@ import { Parallax } from "rc-scroll-anim";
 import ticket_r from "../assets/ticket_r1.png";
 import ticket_l from "../assets/ticket_l1.png";
 import { WordCloud } from "@antv/g2plot";
+import pic from '../assets/Movies and TV-1.png'
 
 const movies = [
   {
@@ -66,6 +67,11 @@ const movies = [
     name: "007-无暇赴死",
     rate: 6.7,
   },
+  {
+    id: "13",
+    name: "雄狮少年",
+    rate: 8.2,
+  },
 ];
 
 function Tickets() {
@@ -78,10 +84,11 @@ function Tickets() {
       // colorField: 'tag',
       legend: {},
       // imageMask: 'https://gw.alipayobjects.com/zos/antfincdn/Qw7Xbn76kM/53176454-747c-4f0a-a9e5-936aa66a0082.png',
+    imageMask:pic,
       wordStyle: {
         fontFamily: "'Noto Serif SC', serif",
         fontWeight: "normal",
-        fontSize: [16, 28],
+        fontSize: [10, 28],
       },
       // 设置交互类型
       interactions: [{ type: "element-active" }],
@@ -110,7 +117,7 @@ function Tickets() {
     >
       <Parallax
         id="movie"
-        style={{ width: "200px", height: "200px" ,transform:"translateY(30px)",opacity:0}}
+        style={{ width: "250px", height: "250px" ,transform:"translateY(30px)",opacity:0}}
         animation={{y:0,opacity:1,playScale:[0.6,0.7]}}
       ></Parallax>
       {/* <Parallax
