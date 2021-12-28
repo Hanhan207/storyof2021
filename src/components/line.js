@@ -86,6 +86,7 @@ function Mypath() {
           height="461"
           fill="none"
           viewBox="0 0 255 461"
+          // viewBox="0 0 374 430"
         >
           <TweenOne
             animation={{ SVGDraw: linedata, duration: 4000, opacity: 1 }}
@@ -100,6 +101,7 @@ function Mypath() {
             strokeDashoffset="10"
             strokeLinecap="round"
             d="M254 6C226.667 0 164.2.7 133 51.5 94 115 140.5 185 121.5 236s-86 18.5-78.5 155c0 55.2-28 67.333-42 66.5"
+            // d="M153 3C104.167 33.333 18.1 109.3 64.5 170.5c58 76.5 143.458-71.5 74-80.5-69.459-9-202.5 51-94 169s215-186.5 295-102 1 333.5-186.5 254.5c-150-63.2 1.833-105.667 96.5-119"
           />
         </svg>
       </Parallax>

@@ -104,7 +104,7 @@ function Face(e) {
           ?
         </Parallax>
       </Parallax>
-      <Parallax
+      {/* <Parallax
         style={{
           fontFamily: font,
           fontSize: "12px",
@@ -114,7 +114,7 @@ function Face(e) {
         animation={{ y: 0, opacity: 1, playScale: scale }}
       >
         How many times have we met this year ?
-      </Parallax>
+      </Parallax> */}
     </div>
   );
 }
