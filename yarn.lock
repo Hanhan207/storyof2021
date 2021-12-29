@@ -7347,6 +7347,11 @@ jsprim@^1.2.2:
     array-includes "^3.1.2"
     object.assign "^4.1.2"
 
+keen-slider@^6.6.2:
+  version "6.6.2"
+  resolved "https://registry.yarnpkg.com/keen-slider/-/keen-slider-6.6.2.tgz#c71c7cde73e2ebe28fd11564a1e7b1cbc0438f31"
+  integrity sha512-ddvhuHIE/QH0neEBFnL/IdLB6GBjeuOLttwusZ3oaOvj8Ut8GzHkaVNuP+6Ur8CO/0pcEIYEEo4BpBzo39rsPw==
+
 killable@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/killable/-/killable-1.0.1.tgz#4c8ce441187a061c7474fb87ca08e2a638194892"

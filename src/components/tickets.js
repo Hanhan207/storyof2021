@@ -5,6 +5,7 @@ import ticket_r from "../assets/ticket_r1.png";
 import ticket_l from "../assets/ticket_l1.png";
 import { WordCloud } from "@antv/g2plot";
 import pic from '../assets/Movies and TV-1.png'
+import Slidermovie from "./Slidermovie";
 
 const movies = [
   {
@@ -75,36 +76,36 @@ const movies = [
 ];
 
 function Tickets() {
-  useEffect(() => {
-    const wordCloud = new WordCloud("movie", {
-      data: movies,
-      wordField: "name",
-      weightField: "rate",
-      color: "#E98102",
-      // colorField: 'tag',
-      legend: {},
-      // imageMask: 'https://gw.alipayobjects.com/zos/antfincdn/Qw7Xbn76kM/53176454-747c-4f0a-a9e5-936aa66a0082.png',
-    imageMask:pic,
-      wordStyle: {
-        fontFamily: "'Noto Serif SC', serif",
-        fontWeight: "normal",
-        fontSize: [10, 28],
-      },
-      // 设置交互类型
-      interactions: [{ type: "element-active" }],
-      state: {
-        active: {
-          // 这里可以设置 active 时的样式
-          style: {
-            lineWidth: 6,
-            color: "#E98102",
-          },
-        },
-      },
-    });
+  // useEffect(() => {
+  //   const wordCloud = new WordCloud("movie", {
+  //     data: movies,
+  //     wordField: "name",
+  //     weightField: "rate",
+  //     color: "#E98102",
+  //     // colorField: 'tag',
+  //     legend: {},
+  //     // imageMask: 'https://gw.alipayobjects.com/zos/antfincdn/Qw7Xbn76kM/53176454-747c-4f0a-a9e5-936aa66a0082.png',
+  //   imageMask:pic,
+  //     wordStyle: {
+  //       fontFamily: "'Noto Serif SC', serif",
+  //       fontWeight: "normal",
+  //       fontSize: [10, 28],
+  //     },
+  //     // 设置交互类型
+  //     interactions: [{ type: "element-active" }],
+  //     state: {
+  //       active: {
+  //         // 这里可以设置 active 时的样式
+  //         style: {
+  //           lineWidth: 6,
+  //           color: "#E98102",
+  //         },
+  //       },
+  //     },
+  //   });
 
-    wordCloud.render();
-  });
+  //   wordCloud.render();
+  // });
 
   return (
     <div
@@ -117,9 +118,10 @@ function Tickets() {
     >
       <Parallax
         id="movie"
-        style={{ width: "250px", height: "250px" ,transform:"translateY(30px)",opacity:0}}
+        style={{ width: "100vw", height: "250px",transform:"translateY(30px)",opacity:0}}
         animation={{y:0,opacity:1,playScale:[0.6,0.7]}}
-      ></Parallax>
+      ><Slidermovie/></Parallax>
+      
       {/* <Parallax
         style={{ transform: " translateX(-40px)", opacity: 0 }}
         animation={{ x: 0, opacity: 1, playScale: [0.6, 0.8] }}
