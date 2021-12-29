@@ -11,7 +11,7 @@ const date = [
     hansrc: require("../assets/avatars/foodhan.png").default,
     midsrc: require("../assets/avatars/foodmid.png").default,
     content: "今天特意都穿了白衣服",
-    des: '2021年我们一起吃了<span class="num">100+</span> 顿饭，在北京这片美食荒漠中，“水平有限”的螺蛳粉被我们宠幸最多，',
+    des: '2021年我们一起吃了<span class="num">100+</span> 顿饭，在北京这片美食荒漠中，“水平有限”的螺蛳粉被我们宠幸最多。',
   },
   {
     month: "02",
@@ -39,7 +39,7 @@ const date = [
     hansrc: require("../assets/avatars/pathhan.png").default,
     midsrc: require("../assets/avatars/pathmid.png").default,
     content: "本来都不准备吃了呢",
-    des:'从研究所到公寓的距离是<span class="num"> 1.9 </span> km，一年来我们一起走过<span class="num"> 34 </span>次。'
+    des:'从研究所到公寓的距离是<span class="num"> 1.9 </span> km，一年来我们一起走过<span class="num"> 48 </span>次。'
   },
   {
     month: "06",
