@@ -65,36 +65,36 @@ function Album(e) {
       top: "360px",
       left: "234px",
     },
-    {
-      id: 11,
-      src: require("../assets/photos/p11.png").default,
-      top: "500.08px",
-      left: "176px",
-    },
-    {
-      id: 12,
-      src: require("../assets/photos/p12.png").default,
-      top: "600px",
-      left: "265px",
-    },
-    {
-      id: 13,
-      src: require("../assets/photos/p13.png").default,
-      top: "585px",
-      left: "60px",
-    },
-    {
-      id: 14,
-      src: require("../assets/photos/p14.png").default,
-      top: "540px",
-      left: "-38px",
-    },
-    {
-      id: 15,
-      src: require("../assets/photos/p15.png").default,
-      top: "460px",
-      left: "-45.63px",
-    },
+    // {
+    //   id: 11,
+    //   src: require("../assets/photos/p11.png").default,
+    //   top: "500.08px",
+    //   left: "176px",
+    // },
+    // {
+    //   id: 12,
+    //   src: require("../assets/photos/p12.png").default,
+    //   top: "600px",
+    //   left: "265px",
+    // },
+    // {
+    //   id: 13,
+    //   src: require("../assets/photos/p13.png").default,
+    //   top: "585px",
+    //   left: "60px",
+    // },
+    // {
+    //   id: 14,
+    //   src: require("../assets/photos/p13.png").default,
+    //   top: "540px",
+    //   left: "-38px",
+    // },
+    // {
+    //   id: 15,
+    //   src: require("../assets/photos/p15.png").default,
+    //   top: "460px",
+    //   left: "-45.63px",
+    // },
   ];
 
   function time(index) {
@@ -118,7 +118,7 @@ function Album(e) {
         style={{
           padding:widht*0.1,
           // height: "100%",
-          height:height * 1.3,
+          height:height * 1,
           width:widht,
           position: "realative",
           overflowX: "hidden",
